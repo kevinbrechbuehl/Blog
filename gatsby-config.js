@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `ctor.io`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Kevin Brechbühl`,
+      summary: `Hi, I'm a Software Engineer with a focus on web technologies, mainly with ASP.NET Core and Angular. Previously worked a lot with Sitecore too.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    description: `Software Engineering & Web Technologies in general with a focus on .NET, Angular and Sitecore.`,
+    siteUrl: `https://ctor.io/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `aquasonic`,
     },
   },
   plugins: [
@@ -60,13 +60,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `ctor.io | Tech Blog`,
+        short_name: `Tech Blog`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        theme_color: `#c83219`,
+        icon: `content/assets/icon.png`,
       },
     },
     `gatsby-plugin-react-helmet`,
