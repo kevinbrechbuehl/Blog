@@ -1,0 +1,43 @@
+name: Production
+on:
+  push:
+    branches: [ master ]
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup Node
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+    - name: Build
+      run: |
+        npm ci
+        npm run build
+    - name: Upload Artifacts
+      uses: actions/upload-artifact@v1
+      with:
+        name: public
+        path: public
+      env:
+        CI: true
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Download Artifacts
+      uses: actions/download-artifact@v1
+      with:
+        name: public
+    - name: Deploy Artifacts
+      uses: kevinpainchaud/simple-ftp-deploy-action@v1.0.1
+      with:
+        ftp_host: ${{ secrets.FTP_SERVER }}
+        ftp_username: ${{ secrets.FTP_USERNAME }}
+        ftp_password: ${{ secrets.FTP_PASSWORD }}
+        local_source_dir: public
+        dist_target_dir: .
