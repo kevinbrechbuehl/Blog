@@ -106,3 +106,38 @@ to its own, safe country. But nothing the copy said could convince her and so it
 didn’t take long until a few insidious Copy Writers ambushed her, made her drunk
 with Longe and Parole and dragged her into their agency, where they abused her
 for their projects again and again.
+
+## Code
+
+This section adds some code to demonstrate the theme. There will be inline
+markup like `here we go` as well as bigger blocks.
+
+There is a sample in C#:
+
+```csharp
+public class Sample
+{
+  private readonly string test;
+
+  public Sample(string test)
+  {
+    this.test = test;
+  }
+
+  public string GetString()
+  {
+    rturn this.test;
+  }
+}
+```
+
+Or in XML:
+
+```xml
+<note>
+  <to>John</to>
+  <from>Doe</from>
+  <heading>Reminder</heading>
+  <body>Remind me that we will also have very long code lines which should introduce a scrollbar!</body>
+</note>
+```
