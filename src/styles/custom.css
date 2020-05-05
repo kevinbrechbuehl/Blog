@@ -1,0 +1,106 @@
+/* === Header === */
+#site-head {
+  border-bottom: 1px solid #ecf0f1;
+}
+
+#site-head h1 {
+  text-align: center;
+}
+
+h1.blog-title {
+  margin-top: 0;
+}
+
+h1.blog-subtitle {
+  margin-bottom: 50px;
+}
+
+/* === Footer === */
+.footer-menu {
+  margin: 0 auto;
+  border: 0;
+}
+
+.footer-menu li {
+  line-height: 1.4em;
+}
+
+.footer-menu a {
+  padding: 0;
+}
+
+section.theme {
+  margin-bottom: 6px;
+}
+
+/* === Navigation === */
+nav {
+  border-top: 0;
+}
+
+/* === Post === */
+.backtotop {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: 'Open Sans Condensed', sans-serif;
+  float: left;
+  padding-left: 6px;
+}
+
+.backtotoptext {
+  color: #596364;
+}
+
+.post-footer {
+  border-top: 1px solid #ecf0f1;
+}
+
+/* === Links === */
+a,
+a:visited,
+.pagination a {
+  color: #c83219;
+}
+
+a:focus,
+a:hover,
+h1.post-title a:focus,
+h1.post-title a:hover,
+h1.blog-title a:focus,
+h1.blog-title a:hover,
+.pagination a:hover {
+  color: #5b5b57;
+}
+
+a.excerptlink,
+a.excerptlink:visited {
+  color: inherit;
+}
+
+/* === Icons === */
+.footer-social svg {
+  font-size: 2em;
+  margin: 0 14px;
+}
+
+.tags svg,
+.posts-tagged svg,
+.backtotop svg {
+  margin-right: 5px;
+}
+
+.readmore .icon {
+  padding-left: 5px;
+  font-size: 24px;
+}
+
+/* === Syntax Highlighting === */
+pre {
+  background-color: #f7f7f7 !important;
+}
+
+code {
+  color: #596364 !important;
+  background-color: #f7f7f7 !important;
+  padding: 2px 4px !important;
+}
