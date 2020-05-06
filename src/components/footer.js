@@ -50,13 +50,13 @@ class Footer extends React.Component {
             </a>
             &nbsp;
             <a
-              href="/rss"
+              href="/rss.xml"
               target="_blank"
               rel="noopener noreferrer"
-              title="RSS"
+              title="RSS Feed"
             >
               <FontAwesomeIcon icon={faRss} />
-              <span className="hidden">RSS</span>
+              <span className="hidden">RSS Feed</span>
             </a>
           </section>
 
