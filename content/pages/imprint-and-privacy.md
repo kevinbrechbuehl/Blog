@@ -40,6 +40,23 @@ the copyright holders must be obtained in advance.
 
 ## Third Party Services
 
+### YouTube
+
+Our website uses plugins from YouTube, which is operated by Google. The operator
+of the pages is YouTube LLC, 901 Cherry Ave., San Bruno, CA 94066, USA.
+
+If you visit one of our pages featuring a YouTube plugin, a connection to the
+YouTube servers is established. The YouTube server is informed about which
+of our pages you have visited.
+
+If you're logged in to your YouTube account, YouTube can associate
+your browsing behavior directly with your personal profile. This assignment
+occurs regardless of whether or not you click on the video. You can prevent this
+by logging out of your YouTube account.
+
+More information about how YouTube handles your data is available in YouTube’s
+privacy policy at: https://policies.google.com/privacy.
+
 ### Plausible
 
 Plausible is used to gather anonymous information about the usage of this
