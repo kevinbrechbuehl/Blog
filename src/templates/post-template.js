@@ -22,7 +22,7 @@ class PostTemplate extends React.Component {
         <article className="post">
           <header>
             <h1 className="post-title">{post.frontmatter.title}</h1>
-            <p className="post-meta">{post.frontmatter.date}</p>
+            <div className="post-meta">{post.frontmatter.date}</div>
           </header>
           <section
             dangerouslySetInnerHTML={{ __html: post.html }}
