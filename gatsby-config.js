@@ -93,7 +93,7 @@ module.exports = {
           ) {
             edges {
               node {
-                excerpt(pruneLength: 160)
+                excerpt(pruneLength: 500)
                 html
                 fields {
                   slug
