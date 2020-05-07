@@ -61,7 +61,7 @@ exports.createPages = async ({ graphql, actions }) => {
     const postTemplate = path.resolve(`./src/templates/post-template.js`);
     const tagTemplate = path.resolve('src/templates/tag-template.js');
 
-    const postsPerPage = 10;
+    const postsPerPage = 5;
 
     // Create blog posts list pages
     const numPages = Math.ceil(posts.length / postsPerPage);
