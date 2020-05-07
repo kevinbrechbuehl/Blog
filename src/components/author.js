@@ -1,37 +1,32 @@
 import { graphql, useStaticQuery } from 'gatsby';
-import Image from 'gatsby-image';
 import React from 'react';
 
+import image from '../../content/assets/author.jpg';
+
 const Author = () => {
-  const data = useStaticQuery(graphql`
-    query BioQuery {
-      avatar: file(absolutePath: { regex: "/author.jpg/" }) {
-        childImageSharp {
-          fixed(width: 80, height: 80) {
-            ...GatsbyImageSharpFixed
+  const data = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            author {
+              name
+              summary
+            }
           }
         }
       }
-      site {
-        siteMetadata {
-          author {
-            name
-            summary
-          }
-        }
-      }
-    }
-  `);
+    `
+  );
 
   const { author } = data.site.siteMetadata;
 
   return (
     <section className="author">
-      <Image
-        fixed={data.avatar.childImageSharp.fixed}
-        alt={author.name}
+      <div
         className="authorimage"
-      />
+        style={{ background: `url(${image})` }}
+      ></div>
       <h4 className="author-name">{author.name}</h4>
       <p className="bio">{author.summary}</p>
     </section>
