@@ -40,6 +40,14 @@ the copyright holders must be obtained in advance.
 
 ## Third Party Services
 
+### Netlify
+
+Our website is hosted on Netlify, which collects some data for each request in
+their access logs (including the IP addresses of visitors). This
+information is stored for less than 30 days.
+
+See Netlify’s privacy policy for more details: https://www.netlify.com/gdpr.
+
 ### YouTube
 
 Our website uses plugins from YouTube, which is operated by Google. The operator
