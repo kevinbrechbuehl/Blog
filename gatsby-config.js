@@ -56,17 +56,17 @@ module.exports = {
       resolve: `gatsby-plugin-feed`,
       options: {
         query: `
-    {
-      site {
-        siteMetadata {
-          title
-          description
-          siteUrl
-          site_url: siteUrl
-        }
-      }
-    }
-  `,
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
         feeds: [
           {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
@@ -86,28 +86,28 @@ module.exports = {
               });
             },
             query: `
-        {
-          allMarkdownRemark(
-            sort: { order: DESC, fields: [frontmatter___date] },
-            filter: { frontmatter: { template: { eq: "post" } } }
-          ) {
-            edges {
-              node {
-                excerpt(pruneLength: 500)
-                html
-                fields {
-                  slug
-                }
-                frontmatter {
-                  date
-                  title
-                  description
+              {
+                allMarkdownRemark(
+                  sort: { order: DESC, fields: [frontmatter___date] },
+                  filter: { frontmatter: { template: { eq: "post" } } }
+                ) {
+                  edges {
+                    node {
+                      excerpt(pruneLength: 500)
+                      html
+                      fields {
+                        slug
+                      }
+                      frontmatter {
+                        date
+                        title
+                        description
+                      }
+                    }
+                  }
                 }
               }
-            }
-          }
-        }
-      `,
+            `,
             output: '/rss.xml',
             title: 'ctor.io | Tech Blog',
           },
