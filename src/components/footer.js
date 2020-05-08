@@ -108,7 +108,7 @@ class Footer extends React.Component {
             <ul>
               <li>
                 <a
-                  href="https://plausible.io"
+                  href="https://plausible.io/ctor.io"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

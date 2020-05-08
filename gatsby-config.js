@@ -133,5 +133,12 @@ module.exports = {
       },
     },
     `gatsby-plugin-netlify`,
+    {
+      resolve: `gatsby-plugin-plausible`,
+      options: {
+        domain: `ctor.io`,
+        customDomain: `stats.ctor.io`,
+      },
+    },
   ],
 };
