@@ -3,7 +3,7 @@ const loadash = require('lodash');
 const limax = require('limax');
 
 exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions;
+  const { createPage, createRedirect } = actions;
 
   // Get data
   const content = await graphql(
@@ -53,6 +53,10 @@ exports.createPages = async ({ graphql, actions }) => {
   // Create pages
   createBlog(posts, tags);
   createPages(pages);
+
+  // Create redirects
+  createRedirect({ fromPath: '/feed', toPath: '/rss.xml', isPermanent: true });
+  createRedirect({ fromPath: '/rss', toPath: '/rss.xml', isPermanent: true });
 
   function createBlog(posts, tags) {
     const postListTemplate = path.resolve(

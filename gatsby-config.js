@@ -132,5 +132,6 @@ module.exports = {
         exclude: [`/page/*`],
       },
     },
+    `gatsby-plugin-netlify`,
   ],
 };
