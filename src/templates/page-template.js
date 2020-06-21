@@ -4,29 +4,27 @@ import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-class PageTemplate extends React.Component {
-  render() {
-    const page = this.props.data.markdownRemark;
+const PageTemplate = ({ data }) => {
+  const page = data.markdownRemark;
 
-    return (
-      <Layout>
-        <SEO
-          title={page.frontmatter.title}
-          description={page.frontmatter.description || page.excerpt}
+  return (
+    <Layout>
+      <SEO
+        title={page.frontmatter.title}
+        description={page.frontmatter.description || page.excerpt}
+      />
+      <article className="post">
+        <header>
+          <h1 className="post-title">{page.frontmatter.title}</h1>
+        </header>
+        <section
+          dangerouslySetInnerHTML={{ __html: page.html }}
+          className="post-content"
         />
-        <article className="post">
-          <header>
-            <h1 className="post-title">{page.frontmatter.title}</h1>
-          </header>
-          <section
-            dangerouslySetInnerHTML={{ __html: page.html }}
-            className="post-content"
-          />
-        </article>
-      </Layout>
-    );
-  }
-}
+      </article>
+    </Layout>
+  );
+};
 
 export default PageTemplate;
 

@@ -6,42 +6,39 @@ import Pagination from '../components/pagination';
 import PostExcerpt from '../components/post-excerpt';
 import SEO from '../components/seo';
 
-class PostListTemplate extends React.Component {
-  render() {
-    const { data } = this.props;
-    const posts = data.allMarkdownRemark.edges;
+const PostListTemplate = ({ data, pageContext }) => {
+  const posts = data.allMarkdownRemark.edges;
 
-    const { currentPage, numPages } = this.props.pageContext;
-    const isFirst = currentPage === 1;
-    const isLast = currentPage === numPages;
-    const prevPage =
-      currentPage - 1 === 1 ? '/' : 'page/' + (currentPage - 1) + '/';
-    const nextPage = 'page/' + (currentPage + 1) + '/';
+  const { currentPage, numPages } = pageContext;
+  const isFirst = currentPage === 1;
+  const isLast = currentPage === numPages;
+  const prevPage =
+    currentPage - 1 === 1 ? '/' : 'page/' + (currentPage - 1) + '/';
+  const nextPage = 'page/' + (currentPage + 1) + '/';
 
-    const seoTitle = isFirst
-      ? 'ctor.io | Tech Blog'
-      : 'Page ' + currentPage + ' | ctor.io';
+  const seoTitle = isFirst
+    ? 'ctor.io | Tech Blog'
+    : 'Page ' + currentPage + ' | ctor.io';
 
-    return (
-      <Layout>
-        <SEO title={seoTitle} home={true} />
+  return (
+    <Layout>
+      <SEO title={seoTitle} home={true} />
 
-        {posts.map(({ node }) => (
-          <PostExcerpt key={node.fields.slug} post={node} />
-        ))}
+      {posts.map(({ node }) => (
+        <PostExcerpt key={node.fields.slug} post={node} />
+      ))}
 
-        <Pagination
-          currentPage={currentPage}
-          numPages={numPages}
-          isFirst={isFirst}
-          isLast={isLast}
-          prevPage={prevPage}
-          nextPage={nextPage}
-        />
-      </Layout>
-    );
-  }
-}
+      <Pagination
+        currentPage={currentPage}
+        numPages={numPages}
+        isFirst={isFirst}
+        isLast={isLast}
+        prevPage={prevPage}
+        nextPage={nextPage}
+      />
+    </Layout>
+  );
+};
 
 export default PostListTemplate;
 
