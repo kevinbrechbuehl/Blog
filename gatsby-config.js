@@ -75,7 +75,10 @@ module.exports = {
                   description:
                     edge.node.frontmatter.description || edge.node.excerpt,
                   date: edge.node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  url:
+                    site.siteMetadata.siteUrl +
+                    edge.node.fields.slug +
+                    '?utm_source=RSS',
                   guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
                   custom_elements: [
                     {
