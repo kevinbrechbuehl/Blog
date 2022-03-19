@@ -15,7 +15,7 @@ There is a http header called
 [Access-Control-Allow-Origin](http://www.w3.org/TR/cors/#access-control-allow-origin-response-header),
 which is exactly what we use here. So, anywhere in our code we can set this
 header to allow resource sharing. We could either allow this for every domain
-(with a `*`) or for a specific address, i.e. `http://www.aquasonic.ch`.
+(with a `*`) or for a specific address, i.e. `https://www.kevinbrechbuehl.com`.
 
 ```csharp
 HttpContext.Response.AppendHeader("Access-Control-Allow-Origin", "*");
@@ -24,7 +24,7 @@ HttpContext.Response.AppendHeader("Access-Control-Allow-Origin", "*");
 or
 
 ```csharp
-HttpContext.Response.AppendHeader("Access-Control-Allow-Origin", "http://www.aquasonic.ch");
+HttpContext.Response.AppendHeader("Access-Control-Allow-Origin", "https://www.kevinbrechbuehl.com");
 ```
 
 But what if we want to add this header for static resources on the file system,

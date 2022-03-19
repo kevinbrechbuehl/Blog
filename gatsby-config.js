@@ -8,7 +8,7 @@ module.exports = {
     description: `Software Engineering & Web Technologies in general with a focus on .NET, Angular and Sitecore.`,
     siteUrl: `https://ctor.io/`,
     social: {
-      twitter: `aquasonic`,
+      twitter: `kevinbrechbuehl`,
     },
   },
   plugins: [

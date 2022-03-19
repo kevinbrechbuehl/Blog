@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="inner">
         <section className="footer-social">
           <a
-            href="https://twitter.com/aquasonic"
+            href="https://twitter.com/kevinbrechbuehl"
             target="_blank"
             rel="noopener noreferrer"
             title="Twitter"
@@ -62,7 +62,7 @@ const Footer = () => {
         <section className="footer-author">
           A blog by{' '}
           <a
-            href="https://www.aquasonic.ch"
+            href="https://www.kevinbrechbuehl.com"
             target="_blank"
             rel="noopener noreferrer"
           >

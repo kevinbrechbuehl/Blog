@@ -6,7 +6,7 @@ template: 'page'
 
 ## Responsible for the content
 
-mail@aquasonic.ch
+mail@kevinbrechbuehl.ch
 
 Kevin Brechbühl<br/>
 Auweg 53<br/>

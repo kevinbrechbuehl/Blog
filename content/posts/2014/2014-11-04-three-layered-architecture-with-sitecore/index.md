@@ -72,4 +72,4 @@ well).
 If you have any feedback regarding the three-layered architecture or the
 presentation at the Sitecore User Group, I would be very happy to hear from you.
 You can either contact me via comment on this blog post or on Twitter
-[@aquasonic](https://twitter.com/aquasonic).
+[@kevinbrechbuehl](https://twitter.com/kevinbrechbuehl).

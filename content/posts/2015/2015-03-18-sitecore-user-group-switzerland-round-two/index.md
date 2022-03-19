@@ -37,5 +37,5 @@ hold presentations in English.
 
 Do you have any questions? Feel free to write us a mail over the [event
 website](https://sugch.eventbrite.com/?aff=ctorio) or send me a direct message
-on [Twitter](https://twitter.com/aquasonic). We are looking forward to see you
+on [Twitter](https://twitter.com/kevinbrechbuehl). We are looking forward to see you
 there.
