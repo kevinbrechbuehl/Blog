@@ -19,7 +19,7 @@ const Footer = () => {
           </a>
           &nbsp;
           <a
-            href="https://github.com/aquasonic"
+            href="https://github.com/kevinbrechbuehl"
             target="_blank"
             rel="noopener noreferrer"
             title="GitHub"
@@ -95,11 +95,11 @@ const Footer = () => {
           </a>{' '}
           by{' '}
           <a
-            href="https://github.com/aquasonic/Blog"
+            href="https://github.com/kevinbrechbuehl/Blog"
             target="_blank"
             rel="noopener noreferrer"
           >
-            aquasonic
+            Kevin Brechbühl
           </a>
         </section>
 

@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "Kevin Brechbühl <mail@kevinbrechbuehl.ch>",
   "bugs": {
-    "url": "https://github.com/aquasonic/blog/issues"
+    "url": "https://github.com/kevinbrechbuehl/blog/issues"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",

@@ -66,7 +66,7 @@ Mapper](http://glass.lu/), because it’s very powerful and easy to use.
 The full presentation of this topic can be downloaded
 [here](https://github.com/SUGCH/ThreeLayeredArchitectureWithSitecore/blob/master/doc/ThreeLayeredArchitectureWithSitecore.pdf).
 The code I showed during the demonstration can be downloaded at
-[GitHub](https://github.com/aquasonic/SUGCH2014) (including all documentation as
+[GitHub](https://github.com/SUGCH/ThreeLayeredArchitectureWithSitecore) (including all documentation as
 well).
 
 If you have any feedback regarding the three-layered architecture or the

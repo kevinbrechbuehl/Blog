@@ -47,6 +47,6 @@ into my new markdown files.
 
 8 days after the first commit, my blog has been fully migrated to Gatsby and is
 running smoothly on [Netlify](https://www.netlify.com). The source is available
-at [Github](https://github.com/aquasonic/Blog). After all, the developer
+at [Github](https://github.com/kevinbrechbuehl/Blog). After all, the developer
 experience with Gatsby is really great and I hope to find more time to write
 blog posts again. I have a lot of ideas and interesting stuff to share :-)

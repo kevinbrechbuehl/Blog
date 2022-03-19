@@ -22,7 +22,7 @@ let's do this.
 
 I have forked Habitat and implemented everything as described in this post in
 [the fork available at
-GitHub](https://github.com/aquasonic/Habitat/tree/dependency-injection).
+GitHub](https://github.com/kevinbrechbuehl/Habitat/tree/dependency-injection).
 
 ## Container Initialization
 
