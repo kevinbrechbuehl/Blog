@@ -9,8 +9,8 @@ template: 'page'
 mail@kevinbrechbuehl.ch
 
 Kevin Brechbühl<br/>
-Auweg 53<br/>
-3627 Heimberg
+Pappelweg 65<br/>
+3613 Steffisburg
 
 ## Disclaimer
 
