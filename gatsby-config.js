@@ -140,7 +140,6 @@ module.exports = {
       resolve: `gatsby-plugin-plausible`,
       options: {
         domain: `ctor.io`,
-        customDomain: `stats.ctor.io`,
       },
     },
   ],
